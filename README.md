@@ -3,7 +3,7 @@
 We test the scripts below on Ubuntu 20.04 LTS with protobuf 3.6.1 as suggested in p4c of the commit we build atop.
 
 #### Build
-Suppose you have installed all the [dependencies](https://github.com/p4lang/p4c/#ubuntu-dependencies) for p4c. 
+Suppose you have installed all the [dependencies](https://github.com/p4lang/p4c/tree/cc0741d722c2fc99513716e86170d70d000503d6?tab=readme-ov-file#ubuntu-dependencies) for p4c. 
 
 0. Scripts for installing the dependecies
 
