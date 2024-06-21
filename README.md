@@ -1,7 +1,19 @@
 ### P4C Extension
 
+We test the scripts below on Ubuntu 20.04 LTS with protobuf 3.6.1 as suggested in p4c of the commit we build atop.
+
 #### Build
 Suppose you have installed all the [dependencies](https://github.com/p4lang/p4c/#ubuntu-dependencies) for p4c. 
+
+0. Scripts for installing the dependecies
+
+```
+sudo apt install -y cmake g++ git automake libtool libgc-dev bison flex libfl-dev libgmp-dev \
+libboost-dev libboost-iostreams-dev libboost-graph-dev llvm pkg-config \
+python python3-scapy python3-pip tcpdump
+```
+
+Here is the [official instruction to install protobuf 3.6.1](https://github.com/protocolbuffers/protobuf/blob/v3.6.1/src/README.md).
 
 1. Clone the repo of p4c and be sure to add the ```--recursive``` flag and checkout to the commit that we are working at
 
@@ -9,6 +21,7 @@ Suppose you have installed all the [dependencies](https://github.com/p4lang/p4c/
 git clone --recursive https://github.com/p4lang/p4c.git
 cd p4c
 git checkout cc0741d722c2fc99513716e86170d70d000503d6
+git submodule update --recursive
 ```
 
 2. Clone the repo under `p4c/backends`
